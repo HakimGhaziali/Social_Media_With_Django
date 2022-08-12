@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+
+
+
+
+{% block content %}
+{% include 'home/home.html' %}
+kkkk
+
+<form action="post">
+
+    {% csrf_token %}
+
+    {{ form.as_p }}
+
+
+
+    <input type="submit" value="Submit">
+  </form>
+
+
+{% endblock content %}
